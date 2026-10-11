@@ -1,0 +1,59 @@
+table,name,type,nullable,unit,description,source_tool_version,allowed_range
+pages,page_id,string,no,,Page snapshot key: frame_id + page index,pipeline 0.1.1,^[A-Z]{2}-[0-9]{3}-[0-9]{2}$
+pages,frame_id,string,no,,Sampling-frame entry id; joins data/sampling_frame.csv,sampling_frame.csv,^[A-Z]{2}-[0-9]{3}$
+pages,page_type,enum,no,,home = frame URL; task = public task page linked from the homepage,page_frame.csv,home|task
+pages,task_category,enum,yes,,"Task type of the page (null for home). Hand-screened on a stratified sample by ML (Oct 10, 2026): keyword accuracy 71% (37/52, Wilson 95% CI 58-82%) before correction; 14 rows corrected; not gold-standard",discover_tasks.py,requirements_howto|appointments|fees_rates|service_info|faq|contact (legacy how_to|requirements accepted for v0.1.1 outputs)
+pages,task_category_source,enum,yes,,"ml_screen = label set/corrected by ML hand screen; keyword = keyword heuristic only (unscreened or screened-correct, sample IDs not recorded)",ml/task_category_check.md / discover_tasks.py,ml_screen|keyword
+pages,org_group,string,no,,"Cross-country brand/parent group (e.g. BAC, Tigo (Millicom)); else = org_name. CV grouping key",sampling_frame.csv,
+pages,country,enum,no,,ISO 3166-1 alpha-2 country,sampling_frame.csv,SV|GT|HN|CR|MX|CO|PE|CL|AR|DO
+pages,sector,enum,no,,Essential-service sector,sampling_frame.csv,pensions|public_health|banking|id_tax|utilities
+pages,site_type,enum,no,,Operator type of the site,sampling_frame.csv,government|private|mixed
+pages,org_name,string,no,,Institution name,sampling_frame.csv,
+pages,url,string,no,,URL requested,sampling_frame.csv,
+pages,final_url,string,yes,,"URL after redirects, query string and fragment stripped; null on offsite redirect",puppeteer-core 23.11.1 / Chrome 131.0.6778.204,^https?://[^?#]*$
+pages,registrable_domain,string,no,,Registrable domain of url (grouping key for CV),pipeline 0.1.1,
+pages,crawl_ts_utc,string,no,UTC,Audit start time,pipeline 0.1.1,^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$
+pages,audit_status,enum,no,,Outcome of the audit; failed/bot_challenge/skipped_* => all metric fields null (enforced by schema),pipeline 0.1.1,ok|partial|failed|skipped_robots|skipped_status|bot_challenge
+pages,failure_reason,string,yes,,"Reason for skip/failure/partial (e.g. offsite_redirect:<registrable_domain>, navigation_error:chrome_error_page, bot_challenge:<marker>, robots_disallow)",pipeline 0.1.1,
+pages,http_status,integer,yes,,HTTP status of main document in the axe load,puppeteer-core 23.11.1,100..599
+pages,html_lang,string,yes,,<html lang> attribute value,Chrome 131.0.6778.204,
+pages,content_sha256,string,yes,,SHA-256 hex of visible text (text discarded),Python hashlib,^[0-9a-f]{64}$
+pages,axe_version,string,yes,,axe-core engine version,axe-core 4.10.3,
+pages,axe_rules_violated,integer,yes,count,Distinct axe rules with >=1 violation,axe-core 4.10.3,0..
+pages,axe_nodes_total,integer,yes,count,Failing elements across all violated rules,axe-core 4.10.3,0..
+pages,axe_nodes_critical,integer,yes,count,Failing elements in critical-impact rules,axe-core 4.10.3,0..
+pages,axe_nodes_serious,integer,yes,count,Failing elements in serious-impact rules,axe-core 4.10.3,0..
+pages,axe_nodes_moderate,integer,yes,count,Failing elements in moderate-impact rules,axe-core 4.10.3,0..
+pages,axe_nodes_minor,integer,yes,count,Failing elements in minor-impact rules,axe-core 4.10.3,0..
+pages,axe_incomplete_rules,integer,yes,count,Rules axe could not decide (need manual review),axe-core 4.10.3,0..
+pages,lighthouse_version,string,yes,,Lighthouse version,lighthouse 12.3.0,
+pages,lh_perf_score,number,yes,score 0-1,"Performance category score, mobile, simulated slow 4G",lighthouse 12.3.0,0..1
+pages,lh_a11y_score,number,yes,score 0-1,"Accessibility category score, mobile",lighthouse 12.3.0,0..1
+pages,lh_fcp_ms,number,yes,ms,First Contentful Paint (simulated),lighthouse 12.3.0,0..
+pages,lh_lcp_ms,number,yes,ms,Largest Contentful Paint (simulated),lighthouse 12.3.0,0..
+pages,lh_tbt_ms,number,yes,ms,Total Blocking Time,lighthouse 12.3.0,0..
+pages,lh_cls,number,yes,unitless,Cumulative Layout Shift,lighthouse 12.3.0,0..
+pages,lh_speed_index_ms,number,yes,ms,Speed Index,lighthouse 12.3.0,0..
+pages,lh_total_bytes,number,yes,bytes,Total transfer size,lighthouse 12.3.0,0..
+pages,textstat_version,string,yes,,textstat version,textstat 0.7.4,
+pages,read_word_count,integer,yes,count,Words in visible text; task pages only (null for page_type=home),textstat 0.7.4 (lang es),0..
+pages,read_sentence_count,integer,yes,count,Sentences in visible text; task pages only (null for page_type=home),textstat 0.7.4 (lang es),0..
+pages,read_fernandez_huerta,number,yes,index,Fernández-Huerta readability (higher = easier); null if read_flag != ok; task pages only,textstat 0.7.4 (lang es),0..100
+pages,read_szigriszt_pazos,number,yes,index,Szigriszt-Pazos perspicuity / INFLESZ (higher = easier); null if read_flag != ok; task pages only,textstat 0.7.4 (lang es),0..100
+pages,read_flag,enum,yes,,"Readability sanity gate: ok; wps_gt_80 (words/sentence > 80, segmentation failed, e.g. lists/menus) or score_out_of_range (outside 0-100) => scores null, counts kept; null for home/no text",pipeline 0.1.3,ok|wps_gt_80|score_out_of_range
+pages,chrome_version,string,yes,,Chrome build used,@puppeteer/browsers 2.6.1,
+pages,pipeline_version,string,no,,Runner version,pipeline 0.1.1,
+violations,page_id,string,no,,Joins pages.page_id,pipeline 0.1.1,^[A-Z]{2}-[0-9]{3}-[0-9]{2}$
+violations,axe_rule_id,string,no,,axe-core rule id,axe-core 4.10.3,^[a-z0-9-]+$
+violations,sc_id,string,yes,,WCAG SC dotted id; joins ml/wcag_older_adult_map.csv sc_id,axe-core 4.10.3 tags,1.1.1..4.1.3
+violations,impact,enum,yes,,axe impact,axe-core 4.10.3,minor|moderate|serious|critical
+violations,nodes,integer,no,count,Failing elements for this rule,axe-core 4.10.3,>=1
+sampling_frame,org_group,string,no,,Cross-country brand/parent group; else = org_name,manual,
+sampling_frame,frame_status,enum,no,,Frame-level outcome of URL check,check_frame.py,auditable|blocked_outside_sv|unreachable|robots_blocked|robots_unreadable|bot_protected|http_error
+page_frame,page_id,string,no,,Page key = frame_id + -NN (01 = home),build_page_frame.py,^[A-Z]{2}-[0-9]{3}-[0-9]{2}$
+page_frame,page_type,enum,no,,home | task,build_page_frame.py,home|task
+page_frame,task_category,enum,yes,,"Task type of the page (null for home). Hand-screened on a stratified sample by ML (Oct 10, 2026): keyword accuracy 71% (37/52, Wilson 95% CI 58-82%) before correction; 14 rows corrected; not gold-standard",discover_tasks.py,requirements_howto|appointments|fees_rates|service_info|faq|contact
+page_frame,task_category_source,enum,yes,,"ml_screen = label set/corrected by ML hand screen; keyword = keyword heuristic only (unscreened or screened-correct, sample IDs not recorded)",ml/task_category_check.md / discover_tasks.py,ml_screen|keyword
+page_frame,found_via,string,no,,How the URL was found (homepage link + keyword),discover_tasks.py,
+page_frame,http_status,integer,yes,,"HTTP status at check time (HEAD, GET fallback)",check_frame.py / requests 2.32.3,100..599
+page_frame,robots_allowed,enum,no,,robots.txt allows this path for UA AccesoMayor-LatAm,check_frame.py,true|false|no_robots

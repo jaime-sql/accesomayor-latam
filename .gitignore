@@ -1,0 +1,19 @@
+# environments / dependencies
+pipeline/.venv/
+pipeline/node_modules/
+pipeline/browsers/
+__pycache__/
+*.pyc
+.pytest_cache/
+# run artifacts (regenerate with run.sh; may contain raw tool output)
+pipeline/out/
+pipeline/smoke_out/
+pipeline/*_out/
+*.log
+# Lighthouse/axe raw reports, screenshots, traces must never be committed
+*.html
+*.png
+*.jpg
+*.trace.json
+lhr*.json
+.env

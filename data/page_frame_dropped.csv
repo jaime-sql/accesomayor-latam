@@ -1,0 +1,28 @@
+frame_id,url,reason
+SV-021,https://www.bancoagricola.com/adquirencia-pos,merchant service
+SV-024,https://www.baccredomatic.com/es-sv/personas/promociones/walmart,promotion
+SV-027,https://solucionesdigitales.promerica.com.sv/reportedecompras,app endpoint
+SV-037,https://www.cnr.gob.sv/actualizacion-de-agenda-regulatoria-cnr/,"regulatory agenda, not appointments"
+GT-059,https://www.banguat.gob.gt/page/tasa-de-interes-lider-de-politica-monetaria,monetary policy
+GT-059,https://www.banguat.gob.gt/page/modernizacion-del-sistema-de-pagos,interbank
+GT-062,https://eegsa.com/conocenos/,about page
+HN-067,https://bancatlan.hn/comercios-afiliados/atlantida-tap,merchant service
+CR-075,https://www.supen.fi.cr/tramite-de-acreditacion-de-promotor-de-ventas,industry procedure
+CR-076,https://www.ministeriodesalud.go.cr/index.php/tramites-empresariales/76-ley-9028-para-el-control-de-tabaco/2465-control-de-tabaco,business procedure
+CR-080,https://www.bccr.fi.cr/cr/es/sistema-de-pagos/quienes-pueden-ser-afiliados/tarifas-y-comisiones.html,interbank
+CR-080,https://www.bccr.fi.cr/cr/es/sistema-de-pagos/quienes-pueden-ser-afiliados/entidades-afiliadas.html,interbank
+MX-086,https://www.gob.mx,"portal root, not a task page"
+MX-087,https://www.gob.mx,"portal root, not a task page"
+MX-088,https://citamedicadigital.imss.gob.mx/CMW/cmw;jsessionid=[REDACTED],session token in URL
+MX-089,https://www.gob.mx,"portal root, not a task page"
+MX-092,https://www.gob.mx,"portal root, not a task page"
+CO-097,https://sede.colpensiones.gov.co/loader.php?lServicio=Se&lTipo=Process&lFuncion=start&id=39,application process endpoint
+CO-097,https://www.colpensiones.gov.co/pensiones/publicaciones/743/citacion-a-notificacion/,legal notices
+CO-103,https://www.banrep.gov.co/es/requisitos-trimestrales-aco,industry
+CO-103,https://www.banrep.gov.co/es/banco/contratacion-bienes-servicios,procurement
+AR-132,https://www.argentina.gob.ar/salud/senadis,not a citizen task
+AR-132,https://www.argentina.gob.ar/salud/area-de-etica-en-salud,not a citizen task
+AR-138,https://www.edenor.com/grandes-clientes/tramites/actualizacion-de-datos,business customers
+DO-140,https://sipen.gob.do/estadisticas/estados-financieros-fondos-de-pensiones,financial statements
+DO-146,https://www.bancentral.gov.do/a/d/2549-sistema-de-interconexion-de-pagos-sipa,interbank
+PE-115,https://www.gob.pe/institucion/reniec/agenda,"ML screen Oct 10: institutional events agenda, not a task page"

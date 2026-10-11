@@ -1,0 +1,7 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AccesoMayor-LatAm violations row v0.1","type":"object","additionalProperties":false,
+"required":["page_id","axe_rule_id","sc_id","impact","nodes"],
+"properties":{"page_id":{"type":"string","pattern":"^[A-Z]{2}-[0-9]{3}-[0-9]{2}$"},
+"axe_rule_id":{"type":"string","pattern":"^[a-z0-9-]+$"},
+"sc_id":{"type":["string","null"],"pattern":"^[1-4]\\.[0-9]{1,2}\\.[0-9]{1,2}$"},
+"impact":{"enum":["minor","moderate","serious","critical",null]},
+"nodes":{"type":"integer","minimum":1}}}

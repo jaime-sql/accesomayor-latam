@@ -1,0 +1,1 @@
+{"name":"accesomayor-pipeline","private":true,"type":"module","dependencies":{"@puppeteer/browsers":"2.6.1","ajv":"8.17.1","ajv-formats":"3.0.1","axe-core":"4.10.3","lighthouse":"12.3.0","puppeteer-core":"23.11.1","robots-parser":"3.0.1"}}

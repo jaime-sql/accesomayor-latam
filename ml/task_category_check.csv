@@ -1,0 +1,57 @@
+page_id,auto_category,checked_category,correct,note
+SV-038-02,appointments,appointments,1,URL sistema-de-citas; title generic (robots ok)
+PE-115-03,appointments,none (institutional events agenda),0,"gob.pe /agenda = authority's public events agenda, not booking; keyword 'agenda' false positive"
+CO-105-03,appointments,appointments,1,URL Agendamiento-de-Citas
+CL-119-03,appointments,appointments,1,H1 Agendamiento web
+DO-145-02,appointments,appointments,1,Citas web booking app
+HN-071-03,appointments,appointments,1,H1 Citas SAR
+PE-110-03,appointments,appointments,1,H1 Sacar una cita medica
+HN-068-03,appointments,contact,0,Visite una Agencia = branch locator
+SV-032-03,contact,contact,1,H1 Contactanos
+SV-011-02,contact,contact,1,"URL contacto-con-webmaster; robots disallowed, URL only"
+SV-047-03,contact,contact,1,"URL contactenos; robots disallowed, URL only"
+CR-081-03,contact,contact,1,H1 Contactenos
+CL-121-02,contact,contact,1,"sucursales (branch list); robots disallowed, URL only"
+HN-065-03,contact,contact,1,title Formulario de contacto
+DO-149-03,contact,contact,1,title Contacto; found_via keyword 'pago' odd but label right
+SV-020-03,contact,contact,1,URL /contacto; title generic
+SV-017-02,faq,faq,1,H1 Preguntas Frecuentes
+SV-034-03,faq,faq,1,URL preguntas-frecuentes; robots disallowed
+SV-048-02,faq,faq,1,H1 Preguntas Frecuentes
+AR-139-03,faq,faq,1,"URL preguntas_frecuentes; SSL error, URL only"
+SV-026-02,faq,faq,1,URL preguntas-frecuentes; robots disallowed
+HN-065-02,faq,faq,1,title Preguntas frecuentes
+DO-143-03,faq,faq,1,URL preguntasfrecuentes; robots disallowed
+GT-054-03,faq,faq,1,title Preguntas Frecuentes
+SV-021-02,fees_rates,fees_rates,1,URL tasas-de-interes; robots disallowed
+SV-029-02,fees_rates,fees_rates,1,H1 Tasas y comisiones
+SV-044-03,fees_rates,fees_rates,1,H1 Tarifas vigentes
+PE-116-03,fees_rates,service_info,0,"SUNAT indices/CPI page, not customer fees"
+AR-135-03,fees_rates,fees_rates,1,H1 Comparar comisiones
+DO-149-02,fees_rates,fees_rates,1,title Tarifa Electrica
+CO-106-03,fees_rates,how_to,0,credit/collections: help paying your bill
+HN-067-02,fees_rates,service_info,0,financial education / consumer-help page
+SV-044-02,how_to,how_to,1,H1 Como leer su medidor
+SV-024-02,how_to,service_info,0,Compass = product page
+SV-049-02,how_to,contact,0,H1 Puntos de Pago = payment location list
+PE-108-02,how_to,service_info,0,Tramites y servicios index page
+DO-141-03,how_to,service_info,0,"calendario-de-pagos = payment schedule; robots disallowed, URL only"
+GT-060-03,how_to,unverifiable,,"estado-tramite-dpi status lookup; robots disallowed, ambiguous"
+SV-028-02,how_to,service_info,0,product page pago automatico de servicios
+AR-133-02,how_to,unverifiable,,title/H1 generic; TramitesJudiciales ambiguous
+SV-034-02,requirements,service_info,0,"nuevo-dui-centro-temporal = center notice; robots disallowed, URL only"
+SV-006-02,requirements,requirements,1,H1 Tramites de pension (borderline how_to)
+SV-051-02,requirements,requirements,1,H1 Requisitos Solicitud de Interconexion
+AR-136-02,requirements,unverifiable,,"pasaporte landing; robots disallowed, ambiguous"
+HN-071-02,requirements,requirements,1,URL plantillas-de-requisitos; title generic
+GT-062-02,requirements,service_info,0,Gestiones en linea portal index
+CL-119-02,requirements,service_info,0,benefit info sheet (Bono por hijo)
+CR-081-02,requirements,how_to,0,Solicitud de cedula = how to apply; keyword cedula
+SV-029-03,service_info,service_info,1,pensioner savings account product
+DO-143-02,service_info,service_info,1,URL pensionados-jubilados; robots disallowed
+AR-133-03,service_info,service_info,1,URL PersonasJubiladasYPensionadas
+PE-108-03,service_info,service_info,1,H1 Cronograma de pago del pensionista
+CR-075-02,service_info,unverifiable,,SSL error; opaque URL
+CO-099-02,service_info,service_info,1,Asignacion EPS info
+MX-090-03,service_info,service_info,1,BBVA Pensiones product page
+HN-064-03,service_info,faq,0,URL preguntas-frecuentes-...-faq; robots disallowed

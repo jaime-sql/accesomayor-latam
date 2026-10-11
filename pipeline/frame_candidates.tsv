@@ -1,0 +1,151 @@
+country	sector	institution	org_type	url
+SV	pensions	Instituto Salvadoreño del Seguro Social (ISSS)	public	https://www.isss.gob.sv/
+SV	pensions	ISSS Pensiones	public	https://www.isss.gob.sv/pensiones/
+SV	pensions	Instituto Salvadoreño de Previsión Social de la FAES (IPSFA)	public	https://www.ipsfa.gob.sv/
+SV	pensions	INPEP	public	https://www.inpep.gob.sv/
+SV	pensions	AFP Crecer	private	https://www.afpcrecer.com.sv/
+SV	pensions	AFP Confía	private	https://www.confia.com.sv/
+SV	pensions	Instituto Salvadoreño de Pensiones (ISP)	public	https://www.isp.gob.sv/
+SV	pensions	Superintendencia del Sistema Financiero (SSF)	public	https://ssf.gob.sv/
+SV	pensions	Ministerio de Trabajo y Previsión Social	public	https://www.mtps.gob.sv/
+SV	pensions	Bienestar Magisterial	public	https://www.bienestarmagisterial.gob.sv/
+SV	health	Ministerio de Salud (MINSAL)	public	https://www.salud.gob.sv/
+SV	health	ISSS Citas	public	https://www.isss.gob.sv/citas/
+SV	health	Hospital Rosales	public	https://www.hospitalrosales.gob.sv/
+SV	health	Hospital Nacional de Niños Benjamín Bloom	public	https://www.hospitalbloom.gob.sv/
+SV	health	Dirección Nacional de Medicamentos (DNM)	public	https://www.medicamentos.gob.sv/
+SV	health	Doctor SV (telemedicina)	public	https://doctorsv.gob.sv/
+SV	health	Fondo Solidario para la Salud (FOSALUD)	public	https://www.fosalud.gob.sv/
+SV	health	Hospital Militar Central	public	https://www.hospitalmilitar.gob.sv/
+SV	health	Consejo Superior de Salud Pública	public	https://www.cssp.gob.sv/
+SV	health	Hospital de Diagnóstico	private	https://www.hospitaldiagnostico.com/
+SV	banking	Banco Agrícola	private	https://www.bancoagricola.com/
+SV	banking	Banco Cuscatlán	private	https://www.bancocuscatlan.com/
+SV	banking	Banco Davivienda El Salvador	private	https://www.davivienda.com.sv/
+SV	banking	BAC El Salvador	private	https://www.baccredomatic.com/es-sv
+SV	banking	Banco Hipotecario	public	https://www.bancohipotecario.com.sv/
+SV	banking	Banco de Fomento Agropecuario	public	https://www.bfa.gob.sv/
+SV	banking	Banco Promerica	private	https://www.promerica.com.sv/
+SV	banking	Banco Atlántida	private	https://www.bancoatlantida.com.sv/
+SV	banking	Banco Azul	private	https://www.bancoazul.com/
+SV	banking	Banco Central de Reserva	public	https://www.bcr.gob.sv/
+SV	banking	Banco de Desarrollo de El Salvador (BANDESAL)	public	https://www.bandesal.gob.sv/
+SV	banking	Fedecrédito	cooperative	https://www.fedecredito.com.sv/
+SV	banking	Banco Industrial El Salvador	private	https://www.bi.com.sv/
+SV	id_tax	Registro Nacional de las Personas Naturales (RNPN)	public	https://www.rnpn.gob.sv/
+SV	id_tax	Ministerio de Hacienda	public	https://www.mh.gob.sv/
+SV	id_tax	Portal de servicios Hacienda	public	https://portaldgii.mh.gob.sv/
+SV	id_tax	Centro Nacional de Registros (CNR)	public	https://www.cnr.gob.sv/
+SV	id_tax	Dirección General de Migración y Extranjería	public	https://www.migracion.gob.sv/
+SV	id_tax	Gobierno de El Salvador portal	public	https://www.presidencia.gob.sv/
+SV	id_tax	Tribunal Supremo Electoral	public	https://www.tse.gob.sv/
+SV	id_tax	Viceministerio de Transporte (licencias)	public	https://www.mop.gob.sv/
+SV	id_tax	Alcaldía de San Salvador Centro	public	https://www.sansalvador.gob.sv/
+SV	id_tax	Portal de Transparencia	public	https://www.transparencia.gob.sv/
+SV	utilities	CAESS (AES El Salvador)	private	https://www.aes-elsalvador.com/
+SV	utilities	ANDA	public	https://www.anda.gob.sv/
+SV	utilities	DELSUR	private	https://www.delsur.com.sv/
+SV	utilities	CEL	public	https://www.cel.gob.sv/
+SV	utilities	SIGET	public	https://www.siget.gob.sv/
+SV	utilities	Claro El Salvador	private	https://www.claro.com.sv/
+SV	utilities	Tigo El Salvador	private	https://www.tigo.com.sv/
+SV	utilities	Movistar El Salvador	private	https://www.movistar.com.sv/
+SV	utilities	Correos de El Salvador	public	https://www.correos.gob.sv/
+SV	utilities	CEPA	public	https://www.cepa.gob.sv/
+GT	pensions	IGSS	public	https://www.igssgt.org/
+GT	pensions	Ministerio de Trabajo Guatemala	public	https://www.mintrabajo.gob.gt/
+GT	health	MSPAS	public	https://www.mspas.gob.gt/
+GT	banking	Banco Industrial	private	https://www.corporacionbi.com/
+GT	banking	Banrural	private	https://www.banrural.com.gt/
+GT	banking	Banco de Guatemala	public	https://www.banguat.gob.gt/
+GT	id_tax	RENAP	public	https://www.renap.gob.gt/
+GT	id_tax	SAT Guatemala	public	https://portal.sat.gob.gt/portal/
+GT	utilities	EEGSA	private	https://eegsa.com/
+GT	utilities	Tigo Guatemala	private	https://www.tigo.com.gt/
+HN	pensions	IHSS	public	https://www.ihss.hn/
+HN	pensions	INJUPEMP	public	https://www.injupemp.gob.hn/
+HN	health	Secretaría de Salud	public	https://www.salud.gob.hn/
+HN	banking	Banco Atlántida Honduras	private	https://www.bancatlan.hn/
+HN	banking	BAC Honduras	private	https://www.baccredomatic.com/es-hn
+HN	banking	Banco Central de Honduras	public	https://www.bch.hn/
+HN	id_tax	RNP Honduras	public	https://www.rnp.hn/
+HN	id_tax	SAR Honduras	public	https://www.sar.gob.hn/
+HN	utilities	ENEE	public	https://www.enee.hn/
+HN	utilities	Tigo Honduras	private	https://www.tigo.com.hn/
+CR	pensions	CCSS	public	https://www.ccss.sa.cr/
+CR	pensions	Superintendencia de Pensiones	public	https://www.supen.fi.cr/
+CR	health	Ministerio de Salud CR	public	https://www.ministeriodesalud.go.cr/
+CR	health	EDUS (CCSS)	public	https://edus.ccss.sa.cr/
+CR	banking	Banco Nacional de Costa Rica	public	https://www.bncr.fi.cr/
+CR	banking	Banco de Costa Rica	public	https://www.bancobcr.com/
+CR	banking	Banco Central de Costa Rica	public	https://www.bccr.fi.cr/
+CR	id_tax	Tribunal Supremo de Elecciones	public	https://www.tse.go.cr/
+CR	id_tax	Ministerio de Hacienda CR	public	https://www.hacienda.go.cr/
+CR	utilities	ICE	public	https://www.grupoice.com/
+CR	utilities	AyA	public	https://www.aya.go.cr/
+MX	pensions	IMSS	public	https://www.imss.gob.mx/
+MX	pensions	ISSSTE	public	https://www.gob.mx/issste
+MX	pensions	Pensión Adultos Mayores (Bienestar)	public	https://www.gob.mx/bienestar
+MX	health	IMSS Citas	public	https://www.imss.gob.mx/cita-medica
+MX	health	Secretaría de Salud	public	https://www.gob.mx/salud
+MX	banking	BBVA México	private	https://www.bbva.mx/
+MX	banking	Banorte	private	https://www.banorte.com/
+MX	banking	Banco del Bienestar	public	https://www.gob.mx/bancodelbienestar
+MX	banking	Banxico	public	https://www.banxico.org.mx/
+MX	id_tax	SAT	public	https://www.sat.gob.mx/
+MX	id_tax	RENAPO (CURP)	public	https://www.gob.mx/curp/
+MX	utilities	CFE	public	https://www.cfe.mx/
+CO	pensions	Colpensiones	public	https://www.colpensiones.gov.co/
+CO	pensions	Porvenir	private	https://www.porvenir.com.co/
+CO	health	Ministerio de Salud	public	https://www.minsalud.gov.co/
+CO	health	Nueva EPS	public	https://www.nuevaeps.com.co/
+CO	banking	Bancolombia	private	https://www.bancolombia.com/
+CO	banking	Banco de Bogotá	private	https://www.bancodebogota.com/
+CO	banking	Banco de la República	public	https://www.banrep.gov.co/
+CO	id_tax	Registraduría Nacional	public	https://www.registraduria.gov.co/
+CO	id_tax	DIAN	public	https://www.dian.gov.co/
+CO	utilities	EPM	public	https://www.epm.com.co/
+CO	utilities	Enel Colombia	private	https://www.enel.com.co/
+PE	pensions	ONP	public	https://www.gob.pe/onp
+PE	pensions	AFP Integra	private	https://www.afpintegra.pe/
+PE	health	EsSalud	public	https://www.gob.pe/essalud
+PE	health	MINSA	public	https://www.gob.pe/minsa
+PE	banking	BCP	private	https://www.viabcp.com/
+PE	banking	Banco de la Nación	public	https://www.bn.com.pe/
+PE	banking	BCRP	public	https://www.bcrp.gob.pe/
+PE	id_tax	RENIEC	public	https://www.gob.pe/reniec
+PE	id_tax	SUNAT	public	https://www.sunat.gob.pe/
+PE	utilities	Sedapal	public	https://www.sedapal.com.pe/
+PE	utilities	Luz del Sur	private	https://www.luzdelsur.pe/
+CL	pensions	IPS ChileAtiende	public	https://www.chileatiende.gob.cl/
+CL	pensions	Superintendencia de Pensiones	public	https://www.spensiones.cl/
+CL	health	FONASA	public	https://www.fonasa.cl/
+CL	health	MINSAL Chile	public	https://www.minsal.cl/
+CL	banking	BancoEstado	public	https://www.bancoestado.cl/
+CL	banking	Banco de Chile	private	https://portales.bancochile.cl/personas
+CL	banking	Banco Central de Chile	public	https://www.bcentral.cl/
+CL	id_tax	Registro Civil	public	https://www.registrocivil.cl/
+CL	id_tax	SII	public	https://www.sii.cl/
+CL	utilities	Enel Chile	private	https://www.enel.cl/
+CL	utilities	Aguas Andinas	private	https://www.aguasandinas.cl/
+AR	pensions	ANSES	public	https://www.anses.gob.ar/
+AR	pensions	PAMI	public	https://www.pami.org.ar/
+AR	health	Ministerio de Salud	public	https://www.argentina.gob.ar/salud
+AR	banking	Banco Nación	public	https://www.bna.com.ar/
+AR	banking	Banco Galicia	private	https://www.galicia.ar/
+AR	banking	BCRA	public	https://www.bcra.gob.ar/
+AR	id_tax	RENAPER	public	https://www.argentina.gob.ar/interior/renaper
+AR	id_tax	ARCA (ex AFIP)	public	https://www.arca.gob.ar/
+AR	utilities	Edenor	private	https://www.edenor.com/
+AR	utilities	AySA	public	https://www.aysa.com.ar/
+DO	pensions	SIPEN	public	https://www.sipen.gob.do/
+DO	pensions	TSS	public	https://www.tss.gob.do/
+DO	health	Ministerio de Salud Pública	public	https://www.msp.gob.do/
+DO	health	SeNaSa	public	https://www.arssenasa.gob.do/
+DO	banking	Banco Popular Dominicano	private	https://popularenlinea.com/
+DO	banking	Banreservas	public	https://www.banreservas.com/
+DO	banking	Banco Central RD	public	https://www.bancentral.gov.do/
+DO	id_tax	JCE	public	https://jce.gob.do/
+DO	id_tax	DGII	public	https://dgii.gov.do/
+DO	utilities	EDESUR	public	https://edesur.com.do/
+DO	utilities	CAASD	public	https://www.caasd.gob.do/
