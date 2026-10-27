@@ -16,6 +16,7 @@ cd pipeline
 ```
 Requires Node 20 and Python 3.12+. `run.sh` installs pinned deps (axe-core 4.10.3, Lighthouse 12.3.0,
 puppeteer-core 23.11.1, Chrome for Testing 131.0.6778.204, textstat 0.7.4) and writes `pages.csv`, `violations.csv`, `run_log.csv`.
+Subset flags `--ids`, `--country`, and `--limit`, plus the frozen-input / DataPort measurement notes: `docs/REPRODUCIBILITY.md`.
 
 ## Layout
 | path | contents |
@@ -25,6 +26,7 @@ puppeteer-core 23.11.1, Chrome for Testing 131.0.6778.204, textstat 0.7.4) and w
 | `data/schema.md`, `data/data_dictionary.csv` | published schema and per-field dictionary |
 | `data/frame_summary.md` | counts, blocked sites, gaps, limitations |
 | `pipeline/` | runner (v0.1.3), JSON Schemas, tests, discovery scripts — see `pipeline/README.md` |
+| `docs/REPRODUCIBILITY.md` | frozen inputs, how `pages.csv` / `violations.csv` are produced, DataPort package |
 | `ml/` | WCAG 2.2 → older-adult barrier map, gold annotation rubric, baseline plan, task-category check |
 | `pilot/` | frozen 50-page El Salvador pilot (`pilot.csv`, `pilot_violations.csv`, pipeline v0.1.x) |
 | `analytics/pilot_report.md` | pilot quality report |
